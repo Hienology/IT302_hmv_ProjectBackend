@@ -1,0 +1,534 @@
+[{
+  "_id": {
+    "$oid": "6aac0e5ffbb67b7c935ab003"
+  },
+  "title": "Acton Town Underground Station",
+  "details": "London Underground station on the District, Piccadilly lines, Zone 3.",
+  "line": "District",
+  "lines": [
+    "District",
+    "Piccadilly"
+  ],
+  "zone": "3",
+  "naptanId": "940GZZLUACT",
+  "latitude": 51.503057,
+  "longitude": -0.280462,
+  "image": "https://upload.wikimedia.org/wikipedia/commons/7/79/Acton_Town_Tube_Station.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+  "lastUpdated": "2026-09-17T01:40:00.000Z"
+},
+{
+  "_id": {
+    "$oid": "6aac0e5ffbb67b7c935ab004"
+  },
+  "title": "Aldgate East Underground Station",
+  "details": "London Underground station on the District, Hammersmith & City lines, Zone 1.",
+  "line": "District",
+  "lines": [
+    "District",
+    "Hammersmith & City"
+  ],
+  "zone": "1",
+  "naptanId": "940GZZLUADE",
+  "latitude": 51.515037,
+  "longitude": -0.072384,
+  "image": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Platform_%2815234313935%29.jpg?utm_source=simple.wikipedia.org&utm_campaign=index&utm_content=original",
+  "lastUpdated": "2026-09-17T01:40:00.000Z"
+},
+{
+  "_id": {
+    "$oid": "6aac0e5ffbb67b7c935ab005"
+  },
+  "title": "Bromley-by-Bow Underground Station",
+  "details": "London Underground station on the District, Hammersmith & City lines, Zone 2/3.",
+  "line": "District",
+  "lines": [
+    "District",
+    "Hammersmith & City"
+  ],
+  "zone": "2/3",
+  "naptanId": "940GZZLUBBB",
+  "latitude": 51.524839,
+  "longitude": -0.011538,
+  "image": "https://staticmap.openstreetmap.de/staticmap.php?center=51.524839,-0.011538&zoom=16&size=600x400&maptype=mapnik",
+  "lastUpdated": "2026-09-17T01:40:00.000Z"
+},
+{
+  "_id": {
+    "$oid": "6aac0e5ffbb67b7c935ab006"
+  },
+  "title": "Becontree Underground Station",
+  "details": "London Underground station on the District line, Zone 5.",
+  "line": "District",
+  "lines": [
+    "District"
+  ],
+  "zone": "5",
+  "naptanId": "940GZZLUBEC",
+  "latitude": 51.540331,
+  "longitude": 0.127016,
+  "image": "https://upload.wikimedia.org/wikipedia/commons/b/b7/New_Bromley-by-Bow_LU_Station.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original",
+  "lastUpdated": "2026-09-17T01:40:00.000Z"
+},
+{
+  "_id": {
+    "$oid": "6aac0e5ffbb67b7c935ab007"
+  },
+  "title": "Barons Court Underground Station",
+  "details": "London Underground station on the District, Piccadilly lines, Zone 2.",
+  "line": "District",
+  "lines": [
+    "District",
+    "Piccadilly"
+  ],
+  "zone": "2",
+  "naptanId": "940GZZLUBSC",
+  "latitude": 51.490311,
+  "longitude": -0.213427,
+  "image": "https://c8.alamy.com/comp/2C9FW4P/barons-court-london-underground-station-in-hammersmith-kensington-area-of-west-london-2C9FW4P.jpg",
+  "lastUpdated": "2026-09-17T01:40:00.000Z"
+},
+{
+  "_id": {
+    "$oid": "6aac0e5ffbb67b7c935ab008"
+  },
+  "title": "Bow Road Underground Station",
+  "details": "London Underground station on the District, Hammersmith & City lines, Zone 2.",
+  "line": "District",
+  "lines": [
+    "District",
+    "Hammersmith & City"
+  ],
+  "zone": "2",
+  "naptanId": "940GZZLUBWR",
+  "latitude": 51.52694,
+  "longitude": -0.025128,
+  "image": "https://tubemapper.com/wp-content/uploads/2010/04/53438758104_095f74bc1b_o-1.jpg",
+  "lastUpdated": "2026-09-17T01:40:00.000Z"
+},
+{
+  "_id": {
+    "$oid": "6aac0e5ffbb67b7c935ab009"
+  },
+  "title": "Bayswater Underground Station",
+  "details": "London Underground station on the Circle, District lines, Zone 1.",
+  "line": "District",
+  "lines": [
+    "Circle",
+    "District"
+  ],
+  "zone": "1",
+  "naptanId": "940GZZLUBWT",
+  "latitude": 51.512284,
+  "longitude": -0.187938,
+  "image": "https://tubemapper.com/wp-content/uploads/2010/01/Leinster-Gardens-view-web-scaled.jpg",
+  "lastUpdated": "2026-09-17T01:40:00.000Z"
+},
+{
+  "_id": {
+    "$oid": "6aac0e5ffbb67b7c935ab00a"
+  },
+  "title": "Chiswick Park Underground Station",
+  "details": "London Underground station on the District line, Zone 3.",
+  "line": "District",
+  "lines": [
+    "District"
+  ],
+  "zone": "3",
+  "naptanId": "940GZZLUCWP",
+  "latitude": 51.494627,
+  "longitude": -0.267972,
+  "image": "https://tubemapper.com/wp-content/uploads/2015/01/DSC09902.jpg",
+  "lastUpdated": "2026-09-17T01:40:00.000Z"
+},
+{
+  "_id": {
+    "$oid": "6aac0e5ffbb67b7c935ab00b"
+  },
+  "title": "Dagenham East Underground Station",
+  "details": "London Underground station on the District line, Zone 5.",
+  "line": "District",
+  "lines": [
+    "District"
+  ],
+  "zone": "5",
+  "naptanId": "940GZZLUDGE",
+  "latitude": 51.544096,
+  "longitude": 0.166017,
+  "image": "https://8400e186.delivery.rocketcdn.me/travel/wp-content/uploads/sites/9/2025/01/dagenham-east-station-04.jpg",
+  "lastUpdated": "2026-09-17T01:40:00.000Z"
+},
+{
+  "_id": {
+    "$oid": "6aac0e5ffbb67b7c935ab00c"
+  },
+  "title": "Dagenham Heathway Underground Station",
+  "details": "London Underground station on the District line, Zone 5.",
+  "line": "District",
+  "lines": [
+    "District"
+  ],
+  "zone": "5",
+  "naptanId": "940GZZLUDGY",
+  "latitude": 51.541639,
+  "longitude": 0.147527,
+  "image": "https://upload.wikimedia.org/wikipedia/commons/8/84/The_entrance_to_Dagenham_Heathway_Underground_station_-_geograph.org.uk_-_4859596.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+  "lastUpdated": "2026-09-17T01:40:00.000Z"
+},
+{
+  "_id": {
+    "$oid": "6aac0e5ffbb67b7c935ab00d"
+  },
+  "title": "Ealing Common Underground Station",
+  "details": "London Underground station on the District, Piccadilly lines, Zone 3.",
+  "line": "District",
+  "lines": [
+    "District",
+    "Piccadilly"
+  ],
+  "zone": "3",
+  "naptanId": "940GZZLUECM",
+  "latitude": 51.51014,
+  "longitude": -0.288265,
+  "image": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Ealing_Common_station_20181202_134621_%2849451837877%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+  "lastUpdated": "2026-09-17T01:40:00.000Z"
+},
+{
+  "_id": {
+    "$oid": "6aac0e5ffbb67b7c935ab00e"
+  },
+  "title": "Earl's Court Underground Station",
+  "details": "London Underground station on the District, Piccadilly lines, Zone 1+2.",
+  "line": "District",
+  "lines": [
+    "District",
+    "Piccadilly"
+  ],
+  "zone": "1+2",
+  "naptanId": "940GZZLUECT",
+  "latitude": 51.492063,
+  "longitude": -0.193378,
+  "image": "https://c8.alamy.com/comp/2RGK4B7/the-rear-entrance-to-earls-court-london-underground-station-on-warwick-road-south-west-london-england-uk-2RGK4B7.jpg",
+  "lastUpdated": "2026-09-17T01:40:00.000Z"
+},
+{
+  "_id": {
+    "$oid": "6aac0e5ffbb67b7c935ab00f"
+  },
+  "title": "East Ham Underground Station",
+  "details": "London Underground station on the District, Hammersmith & City lines, Zone 3+4.",
+  "line": "District",
+  "lines": [
+    "District",
+    "Hammersmith & City"
+  ],
+  "zone": "3+4",
+  "naptanId": "940GZZLUEHM",
+  "latitude": 51.538948,
+  "longitude": 0.051186,
+  "image": "https://upload.wikimedia.org/wikipedia/commons/0/06/Exterior_of_East_Ham_Tube_Station_%2801%29.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original",
+  "lastUpdated": "2026-09-17T01:40:00.000Z"
+},
+{
+  "_id": {
+    "$oid": "6aac0e5ffbb67b7c935ab010"
+  },
+  "title": "Embankment Underground Station",
+  "details": "London Underground station on the Bakerloo, Circle, District, Northern lines, Zone 1.",
+  "line": "District",
+  "lines": [
+    "Bakerloo",
+    "Circle",
+    "District",
+    "Northern"
+  ],
+  "zone": "1",
+  "naptanId": "940GZZLUEMB",
+  "latitude": 51.507058,
+  "longitude": -0.122666,
+  "image": "https://c8.alamy.com/comp/F28BFH/london-uk-catching-an-underground-tube-train-at-embankment-station-F28BFH.jpg",
+  "lastUpdated": "2026-09-17T01:40:00.000Z"
+},
+{
+  "_id": {
+    "$oid": "6aac0e5ffbb67b7c935ab011"
+  },
+  "title": "Elm Park Underground Station",
+  "details": "London Underground station on the District line, Zone 6.",
+  "line": "District",
+  "lines": [
+    "District"
+  ],
+  "zone": "6",
+  "naptanId": "940GZZLUEPK",
+  "latitude": 51.549775,
+  "longitude": 0.19864,
+  "image": "https://live.staticflickr.com/3284/2685027544_4f2811aacb_b.jpg",
+  "lastUpdated": "2026-09-17T01:40:00.000Z"
+},
+{
+  "_id": {
+    "$oid": "6aac0e5ffbb67b7c935ab012"
+  },
+  "title": "East Putney Underground Station",
+  "details": "London Underground station on the District line, Zone 2+3.",
+  "line": "District",
+  "lines": [
+    "District"
+  ],
+  "zone": "2+3",
+  "naptanId": "940GZZLUEPY",
+  "latitude": 51.459205,
+  "longitude": -0.211,
+  "image": "https://c8.alamy.com/comp/J2A3FA/east-putney-station-J2A3FA.jpg",
+  "lastUpdated": "2026-09-17T01:40:00.000Z"
+},
+{
+  "_id": {
+    "$oid": "6aac0e5ffbb67b7c935ab013"
+  },
+  "title": "Edgware Road (Circle Line) Underground Station",
+  "details": "London Underground station on the Circle, District, Hammersmith & City lines, Zone 1.",
+  "line": "District",
+  "lines": [
+    "Circle",
+    "District",
+    "Hammersmith & City"
+  ],
+  "zone": "1",
+  "naptanId": "940GZZLUERC",
+  "latitude": 51.519858,
+  "longitude": -0.167832,
+  "image": "https://c8.alamy.com/comp/2PMBK38/edgware-road-station-edgware-rd-tube-station-edgware-road-london-underground-station-opened-1863-2PMBK38.jpg",
+  "lastUpdated": "2026-09-17T01:40:00.000Z"
+},
+{
+  "_id": {
+    "$oid": "6aac0e5ffbb67b7c935ab014"
+  },
+  "title": "Fulham Broadway Underground Station",
+  "details": "London Underground station on the District line, Zone 2.",
+  "line": "District",
+  "lines": [
+    "District"
+  ],
+  "zone": "2",
+  "naptanId": "940GZZLUFBY",
+  "latitude": 51.480081,
+  "longitude": -0.195422,
+  "image": "https://c8.alamy.com/comp/JY0KG3/fulham-broadway-underground-station-interior-and-barriers-JY0KG3.jpg",
+  "lastUpdated": "2026-09-17T01:40:00.000Z"
+},
+{
+  "_id": {
+    "$oid": "6aac0e5ffbb67b7c935ab015"
+  },
+  "title": "Gloucester Road Underground Station",
+  "details": "London Underground station on the Circle, District, Piccadilly lines, Zone 1.",
+  "line": "District",
+  "lines": [
+    "Circle",
+    "District",
+    "Piccadilly"
+  ],
+  "zone": "1",
+  "naptanId": "940GZZLUGTR",
+  "latitude": 51.494316,
+  "longitude": -0.182658,
+  "image": "https://www.ianvisits.co.uk/articles/wp-content/uploads/sites/2/2023/05/Pond-Life-Albertopolis-and-the-Lily-gloucester-road-01.jpg",
+  "lastUpdated": "2026-09-17T01:40:00.000Z"
+},
+{
+  "_id": {
+    "$oid": "6aac0e5ffbb67b7c935ab016"
+  },
+  "title": "Hornchurch Underground Station",
+  "details": "London Underground station on the District line, Zone 6.",
+  "line": "District",
+  "lines": [
+    "District"
+  ],
+  "zone": "6",
+  "naptanId": "940GZZLUHCH",
+  "latitude": 51.554093,
+  "longitude": 0.219116,
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcjFOMwlN5wh76nstW2YMmKqNWnHuuOQ7ycqqwpFdJKqTsbUtGy3G9pXM&s=10",
+  "lastUpdated": "2026-09-17T01:40:00.000Z"
+},
+{
+  "_id": {
+    "$oid": "6aac0e5ffbb67b7c935ab017"
+  },
+  "title": "High Street Kensington Underground Station",
+  "details": "London Underground station on the Circle, District lines, Zone 1.",
+  "line": "District",
+  "lines": [
+    "Circle",
+    "District"
+  ],
+  "zone": "1",
+  "naptanId": "940GZZLUHSK",
+  "latitude": 51.501055,
+  "longitude": -0.192792,
+  "image": "https://c8.alamy.com/comp/D47JC6/high-street-kensington-underground-station-london-uk-D47JC6.jpg",
+  "lastUpdated": "2026-09-17T01:40:00.000Z"
+},
+{
+  "_id": {
+    "$oid": "6aac0e5ffbb67b7c935ab018"
+  },
+  "title": "Mile End Underground Station",
+  "details": "London Underground station on the Central, District, Hammersmith & City lines, Zone 2.",
+  "line": "District",
+  "lines": [
+    "Central",
+    "District",
+    "Hammersmith & City"
+  ],
+  "zone": "2",
+  "naptanId": "940GZZLUMED",
+  "latitude": 51.525122,
+  "longitude": -0.03364,
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Mile_End_tube_station_MMB_04_1992_Stock.jpg/1280px-Mile_End_tube_station_MMB_04_1992_Stock.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+  "lastUpdated": "2026-09-17T01:40:00.000Z"
+},
+{
+  "_id": {
+    "$oid": "6aac0e5ffbb67b7c935ab019"
+  },
+  "title": "Monument Underground Station",
+  "details": "London Underground station on the Circle, District lines, Zone 1.",
+  "line": "District",
+  "lines": [
+    "Circle",
+    "District"
+  ],
+  "zone": "1",
+  "naptanId": "940GZZLUMMT",
+  "latitude": 51.5107,
+  "longitude": -0.085969,
+  "image": "https://c8.alamy.com/comp/B32CR5/circledistrict-line-platform-bankmonument-london-underground-station-B32CR5.jpg",
+  "lastUpdated": "2026-09-17T01:40:00.000Z"
+},
+{
+  "_id": {
+    "$oid": "6aac0e5ffbb67b7c935ab01a"
+  },
+  "title": "Mansion House Underground Station",
+  "details": "London Underground station on the Circle, District lines, Zone 1.",
+  "line": "District",
+  "lines": [
+    "Circle",
+    "District"
+  ],
+  "zone": "1",
+  "naptanId": "940GZZLUMSH",
+  "latitude": 51.512117,
+  "longitude": -0.094009,
+  "image": "https://cdn2.picryl.com/photo/2013/09/22/s-mansion-hse-s-2100082-51007336837-2b9d36-1024.jpg",
+  "lastUpdated": "2026-09-17T01:40:00.000Z"
+},
+{
+  "_id": {
+    "$oid": "6aac0e5ffbb67b7c935ab01b"
+  },
+  "title": "Notting Hill Gate Underground Station",
+  "details": "London Underground station on the Central, Circle, District lines, Zone 1+2.",
+  "line": "District",
+  "lines": [
+    "Central",
+    "Circle",
+    "District"
+  ],
+  "zone": "1+2",
+  "naptanId": "940GZZLUNHG",
+  "latitude": 51.509128,
+  "longitude": -0.196104,
+  "image": "https://upload.wikimedia.org/wikipedia/commons/3/33/Notting_Hill_Gate_Underground_station%2C_London_%28geograph_6955187%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+  "lastUpdated": "2026-09-17T01:40:00.000Z"
+},
+{
+  "_id": {
+    "$oid": "6aac0e5ffbb67b7c935ab01c"
+  },
+  "title": "Plaistow Underground Station",
+  "details": "London Underground station on the District, Hammersmith & City lines, Zone 3.",
+  "line": "District",
+  "lines": [
+    "District",
+    "Hammersmith & City"
+  ],
+  "zone": "3",
+  "naptanId": "940GZZLUPLW",
+  "latitude": 51.531341,
+  "longitude": 0.017451,
+  "image": "https://staticmap.openstreetmap.de/staticmap.php?center=51.531341,0.017451&zoom=16&size=600x400&maptype=mapnik",
+  "lastUpdated": "2026-09-17T01:40:00.000Z"
+},
+{
+  "_id": {
+    "$oid": "6aac0e5ffbb67b7c935ab01d"
+  },
+  "title": "Parsons Green Underground Station",
+  "details": "London Underground station on the District line, Zone 2.",
+  "line": "District",
+  "lines": [
+    "District"
+  ],
+  "zone": "2",
+  "naptanId": "940GZZLUPSG",
+  "latitude": 51.475277,
+  "longitude": -0.20117,
+  "image": "https://staticmap.openstreetmap.de/staticmap.php?center=51.475277,-0.20117&zoom=16&size=600x400&maptype=mapnik",
+  "lastUpdated": "2026-09-17T01:40:00.000Z"
+},
+{
+  "_id": {
+    "$oid": "6aac0e5ffbb67b7c935ab01e"
+  },
+  "title": "Putney Bridge Underground Station",
+  "details": "London Underground station on the District line, Zone 2.",
+  "line": "District",
+  "lines": [
+    "District"
+  ],
+  "zone": "2",
+  "naptanId": "940GZZLUPYB",
+  "latitude": 51.468262,
+  "longitude": -0.208731,
+  "image": "https://staticmap.openstreetmap.de/staticmap.php?center=51.468262,-0.208731&zoom=16&size=600x400&maptype=mapnik",
+  "lastUpdated": "2026-09-17T01:40:00.000Z"
+},
+{
+  "_id": {
+    "$oid": "6aac0e5ffbb67b7c935ab01f"
+  },
+  "title": "Ravenscourt Park Underground Station",
+  "details": "London Underground station on the District line, Zone 2.",
+  "line": "District",
+  "lines": [
+    "District"
+  ],
+  "zone": "2",
+  "naptanId": "940GZZLURVP",
+  "latitude": 51.494122,
+  "longitude": -0.235881,
+  "image": "https://staticmap.openstreetmap.de/staticmap.php?center=51.494122,-0.235881&zoom=16&size=600x400&maptype=mapnik",
+  "lastUpdated": "2026-09-17T01:40:00.000Z"
+},
+{
+  "_id": {
+    "$oid": "6aac0e5ffbb67b7c935ab020"
+  },
+  "title": "Stamford Brook Underground Station",
+  "details": "London Underground station on the District line, Zone 2.",
+  "line": "District",
+  "lines": [
+    "District"
+  ],
+  "zone": "2",
+  "naptanId": "940GZZLUSFB",
+  "latitude": 51.494917,
+  "longitude": -0.245704,
+  "image": "https://staticmap.openstreetmap.de/staticmap.php?center=51.494917,-0.245704&zoom=16&size=600x400&maptype=mapnik",
+  "lastUpdated": "2026-09-17T01:40:00.000Z"
+}]
