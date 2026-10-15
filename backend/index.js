@@ -1,16 +1,16 @@
 /**
  * Name: Hien Vo
- * Date: 2026-09-30
+ * Date: 2026-10-14
  * Course: IT-302  Section: 001
- * Assignment: Phase 2 Backend API
+ * Assignment: Phase 3 Backend API
  * Email: hmv@njit.edu
  */
-
 const express = require("express");
 const cors = require("cors");
 const { MongoClient } = require("mongodb");
 const stations = require("./api/stations.route");
 const StationsDAO = require("./dao/stationsDAO");
+const CommentsDAO = require("./dao/commentsDAO");
 
 const app = express();
 
@@ -19,7 +19,7 @@ app.use(express.json());
 
 app.use("/api/v1/hmv/stations", stations);
 
-app.use("*", (req, res) => {
+app.use((req, res) => {
   res.status(404).json({ error: "not found" });
 });
 
@@ -29,6 +29,7 @@ async function connectToMongo() {
   const client = new MongoClient(uri);
   await client.connect();
   await StationsDAO.injectDB(client);
+  await CommentsDAO.injectDB(client);
   console.log("connected to Atlas");
   return client;
 }

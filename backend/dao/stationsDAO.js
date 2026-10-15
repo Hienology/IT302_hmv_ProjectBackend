@@ -1,6 +1,6 @@
 /**
  * Name: Hien Vo
- * Date: 2026-09-30
+ * Date: 2026-09-30 (no need to update for Phase 3)
  * Course: IT-302  Section: 001
  * Assignment: Phase 2 Backend API
  * Email: hmv@njit.edu
