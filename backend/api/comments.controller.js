@@ -5,17 +5,20 @@
  * Assignment: Phase 3 Backend API
  * Email: hmv@njit.edu
  */
+const { ObjectId } = require("mongodb");
 const CommentsDAO = require("../dao/commentsDAO");
+
+// Only plain strings are allowed. An object like {"$ne": null} would otherwise
+// reach MongoDB as a query operator and skip the userId ownership check.
+const isNonEmptyString = (value) =>
+  typeof value === "string" && value.trim() !== "";
 
 class CommentsController {
   static async apiPostComment(req, res) {
     try {
-      const stationId = req.body.stationId;
-      const text = req.body.text;
-      const userName = req.body.userName;
-      const userId = req.body.userId;
+      const { stationId, text, userName, userId } = req.body;
 
-      if (!stationId || !text || !userName || !userId) {
+      if (![stationId, text, userName, userId].every(isNonEmptyString)) {
         return res.status(400).json({
           status: "failure",
           error: "stationId, text, userName, and userId are required",
@@ -24,7 +27,11 @@ class CommentsController {
 
       const lastModified = new Date();
       const response = await CommentsDAO.addComment(
-        stationId, text, userName, userId, lastModified
+        stationId,
+        text,
+        userName,
+        userId,
+        lastModified,
       );
       res.json({ status: "success", insertedId: response.insertedId });
     } catch (e) {
@@ -34,20 +41,27 @@ class CommentsController {
 
   static async apiUpdateComment(req, res) {
     try {
-      const commentId = req.body.commentId;
-      const text = req.body.text;
-      const userId = req.body.userId;
+      const { commentId, text, userId } = req.body;
 
-      if (!commentId || !text || !userId) {
+      if (![commentId, text, userId].every(isNonEmptyString)) {
         return res.status(400).json({
           status: "failure",
           error: "commentId, text, and userId are required",
         });
       }
+      if (!ObjectId.isValid(commentId)) {
+        return res.status(400).json({
+          status: "failure",
+          error: "commentId is not a valid id",
+        });
+      }
 
       const lastModified = new Date();
       const response = await CommentsDAO.updateComment(
-        commentId, userId, text, lastModified
+        commentId,
+        userId,
+        text,
+        lastModified,
       );
       if (response.modifiedCount === 0) {
         return res.status(404).json({
@@ -63,13 +77,18 @@ class CommentsController {
 
   static async apiDeleteComment(req, res) {
     try {
-      const commentId = req.body.commentId;
-      const userId = req.body.userId;
+      const { commentId, userId } = req.body;
 
-      if (!commentId || !userId) {
+      if (![commentId, userId].every(isNonEmptyString)) {
         return res.status(400).json({
           status: "failure",
           error: "commentId and userId are required",
+        });
+      }
+      if (!ObjectId.isValid(commentId)) {
+        return res.status(400).json({
+          status: "failure",
+          error: "commentId is not a valid id",
         });
       }
 
@@ -88,8 +107,10 @@ class CommentsController {
 
   static async apiGetComments(req, res) {
     try {
-      const stationId = req.query.stationId;
-      const comments = await CommentsDAO.getComments(stationId);
+      const { stationId } = req.query;
+      const comments = await CommentsDAO.getComments(
+        isNonEmptyString(stationId) ? stationId : undefined,
+      );
       res.json({ comments, total_results: comments.length });
     } catch (e) {
       res.status(500).json({ status: "failure", error: e.message });

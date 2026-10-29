@@ -52,6 +52,15 @@ class StationsDAO {
       return { stationsList: [], totalNumStations: 0 };
     }
   }
+
+  static async getStationById(id) {
+    try {
+      return await stations.findOne({ naptanId: id });
+    } catch (e) {
+      console.error(`Unable to find station by id, ${e}`);
+      throw e;
+    }
+  }
 }
 
 module.exports = StationsDAO;

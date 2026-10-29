@@ -8,14 +8,16 @@
 
 const StationsDAO = require("../dao/stationsDAO");
 
+// Falls back when the value is missing, not a number, or below min (e.g. ?pageNumber=-1).
+const parseIntOr = (value, fallback, min) => {
+  const n = parseInt(value, 10);
+  return Number.isInteger(n) && n >= min ? n : fallback;
+};
+
 class StationsController {
   static async apiGetStations(req, res) {
-    const itemsPerPage = req.query.itemsPerPage
-      ? parseInt(req.query.itemsPerPage, 10)
-      : 20;
-    const pageNumber = req.query.pageNumber
-      ? parseInt(req.query.pageNumber, 10)
-      : 0;
+    const itemsPerPage = parseIntOr(req.query.itemsPerPage, 20, 1);
+    const pageNumber = parseIntOr(req.query.pageNumber, 0, 0);
 
     const filters = {};
     if (req.query.title) filters.title = req.query.title;
@@ -38,6 +40,17 @@ class StationsController {
       });
     } catch (e) {
       console.error(`apiGetStations: ${e}`);
+      res.status(500).json({ error: e.message });
+    }
+  }
+
+  static async apiGetStationById(req, res) {
+    try {
+      const station = await StationsDAO.getStationById(req.params.id);
+      if (!station) return res.status(404).json({ error: "not found" });
+      res.json(station);
+    } catch (e) {
+      console.error(`apiGetStationById: ${e}`);
       res.status(500).json({ error: e.message });
     }
   }

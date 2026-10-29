@@ -12,6 +12,7 @@ const CommentsCtrl = require("./comments.controller");
 const router = express.Router();
 
 router.route("/").get(StationsCtrl.apiGetStations);
+router.route("/id/:id").get(StationsCtrl.apiGetStationById);
 router.route("/comments").get(CommentsCtrl.apiGetComments);
 router
   .route("/comment")

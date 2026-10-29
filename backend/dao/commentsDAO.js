@@ -22,14 +22,18 @@ class CommentsDAO {
 
   static async addComment(stationId, text, userName, userId, lastModified) {
     return await comments.insertOne({
-      stationId, text, userName, userId, lastModified,
+      stationId,
+      text,
+      userName,
+      userId,
+      lastModified,
     });
   }
 
   static async updateComment(commentId, userId, text, lastModified) {
     return await comments.updateOne(
       { _id: new ObjectId(commentId), userId },
-      { $set: { text, lastModified } }
+      { $set: { text, lastModified } },
     );
   }
 
