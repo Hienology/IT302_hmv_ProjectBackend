@@ -13,10 +13,13 @@ class StationsDAO {
     if (stations) return;
     try {
       const dbName = process.env.STATIONS_NS || "it302";
-      const collName = process.env.STATIONS_COLLECTION || "district_line_stations_hmv";
+      const collName =
+        process.env.STATIONS_COLLECTION || "district_line_stations_hmv";
       stations = await conn.db(dbName).collection(collName);
     } catch (e) {
-      console.error(`Unable to establish collection handle in StationsDAO: ${e}`);
+      console.error(
+        `Unable to establish collection handle in StationsDAO: ${e}`,
+      );
     }
   }
 
@@ -40,8 +43,10 @@ class StationsDAO {
     }
 
     try {
+      // A fixed sort order keeps skip/limit pages from overlapping or missing stations.
       const cursor = await stations
         .find(query)
+        .sort({ title: 1 })
         .limit(itemsPerPage)
         .skip(itemsPerPage * pageNumber);
       const stationsList = await cursor.toArray();

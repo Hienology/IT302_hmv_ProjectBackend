@@ -21,9 +21,12 @@ class StationsDataService {
     );
   }
 
-  find(query, by = "title", page = 0) {
+  // filters can hold title, zone, or both, e.g. { title: "park", zone: "3" }.
+  // axios URL-encodes params, so input like "&" or "#" is sent safely.
+  find(filters = {}, page = 0) {
     return axios.get(
-      `${process.env.REACT_APP_BACKEND_URL}/api/v1/hmv/stations?${by}=${query}&pageNumber=${page}`
+      `${process.env.REACT_APP_BACKEND_URL}/api/v1/hmv/stations`,
+      { params: { ...filters, pageNumber: page } }
     );
   }
 }

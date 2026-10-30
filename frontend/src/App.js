@@ -11,7 +11,7 @@ import { Routes, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import NavBar from "./components/NavBar";
 import StationsList from "./components/StationsList";
-import Station from "./components/Station";
+import Station from "./components/Stations.js";
 import Login from "./components/Login";
 
 function App() {

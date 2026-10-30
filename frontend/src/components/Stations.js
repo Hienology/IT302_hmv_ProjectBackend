@@ -11,6 +11,7 @@ import StationsDataService from "../service/StationsDataService";
 import { useParams } from "react-router-dom";
 import Card from "react-bootstrap/Card";
 import Container from "react-bootstrap/Container";
+import StationImage from "./StationImage";
 
 const Station = (props) => {
   const [station, setStation] = useState({
@@ -32,7 +33,7 @@ const Station = (props) => {
   return (
     <Container>
       <Card>
-        <Card.Img src={station.image} alt={station.title} />
+        <StationImage station={station} />
         <Card.Body>
           <Card.Title>{station.title}</Card.Title>
           <Card.Text>
