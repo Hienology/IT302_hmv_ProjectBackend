@@ -17,6 +17,7 @@ import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
 import Alert from "react-bootstrap/Alert";
 import StationImage from "./StationImage";
+import { describeStation } from "../utils/stationText";
 
 const StationsList = () => {
   const [stations, setStations] = useState([]);
@@ -49,7 +50,7 @@ const StationsList = () => {
         setStations([]);
         setTotalResults(0);
         setError(
-          "Couldn't load stations from the server. Press Search to try again."
+          "The stations could not be loaded from the server. Press Search to try again."
         );
       })
       .finally(() => {
@@ -79,37 +80,44 @@ const StationsList = () => {
   const lastShown = currentPage * itemsPerPage + stations.length;
 
   let status;
-  if (loading) status = "Loading stations…";
+  if (loading) status = "The stations are loading.";
   else if (totalResults === 0) status = "No stations match your search.";
-  else status = `Showing ${firstShown}–${lastShown} of ${totalResults} stations`;
+  else if (firstShown === lastShown)
+    status = `You are viewing station ${firstShown} of ${totalResults}.`;
+  else
+    status = `You are viewing stations ${firstShown} to ${lastShown} of ${totalResults}.`;
 
   return (
     <Container>
       <Form onSubmit={search}>
         <Row className="g-2">
           <Col md>
-            <Form.Control
-              type="text"
-              placeholder="Search by title"
-              aria-label="Search by title"
-              value={searchTitle}
-              onChange={(e) => setSearchTitle(e.target.value)}
-            />
+            <Form.Group controlId="searchTitle">
+              <Form.Control
+                type="text"
+                placeholder="Search by title"
+                aria-label="Search by title"
+                value={searchTitle}
+                onChange={(e) => setSearchTitle(e.target.value)}
+              />
+            </Form.Group>
           </Col>
           <Col md>
-            <Form.Select
-              aria-label="Zone"
-              value={searchZone}
-              onChange={(e) => setSearchZone(e.target.value)}
-            >
-              <option value="">All zones</option>
-              <option value="1">Zone 1</option>
-              <option value="2">Zone 2</option>
-              <option value="3">Zone 3</option>
-              <option value="4">Zone 4</option>
-              <option value="5">Zone 5</option>
-              <option value="6">Zone 6</option>
-            </Form.Select>
+            <Form.Group controlId="searchZone">
+              <Form.Select
+                aria-label="Zone"
+                value={searchZone}
+                onChange={(e) => setSearchZone(e.target.value)}
+              >
+                <option value="">All zones</option>
+                <option value="1">Zone 1</option>
+                <option value="2">Zone 2</option>
+                <option value="3">Zone 3</option>
+                <option value="4">Zone 4</option>
+                <option value="5">Zone 5</option>
+                <option value="6">Zone 6</option>
+              </Form.Select>
+            </Form.Group>
           </Col>
           <Col md="auto">
             <Button variant="primary" type="submit">
@@ -134,9 +142,7 @@ const StationsList = () => {
               <StationImage station={station} />
               <Card.Body>
                 <Card.Title>{station.title}</Card.Title>
-                <Card.Text>
-                  Zone {station.zone}. {station.details}
-                </Card.Text>
+                <Card.Text>{describeStation(station)}</Card.Text>
                 <Link to={"/hmv_stations/" + station.naptanId}>
                   View Station
                 </Link>
@@ -156,7 +162,7 @@ const StationsList = () => {
             Previous
           </Button>
           <span>
-            Page {currentPage + 1} of {totalPages}
+            This is page {currentPage + 1} of {totalPages}.
           </span>
           <Button
             variant="outline-primary"
